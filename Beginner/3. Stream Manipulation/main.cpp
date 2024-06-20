@@ -10,6 +10,8 @@ int main(void) {
     cout << left << setw(15) << "C++" << right << setw(10) << 100 << endl
          << left << setw(15) <<"JavaScript" << right << setw(10) << 50 << endl;
 
+    cout << endl;
+
     //Show boolean as true or false instead of 0 and 1
 
     bool isTrue = false;
