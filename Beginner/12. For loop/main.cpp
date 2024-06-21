@@ -9,10 +9,15 @@ int main(void) {
     cout << "Enter a positive number : ";
     cin >> x;
 
-    for(int i = 1; i <= x; i++)
-        result *= i;
+    if (x < 0)
+        cout << "Invalid input!";
+    else {
+        for (int i = 1; i <= x; i++)
+            result *= i;
+        cout << "Factorial of " << x << " is " << result;
+    }
 
-    cout << "Factorial of " << x << " is " << result;
+    
 
     return 0;
 }
