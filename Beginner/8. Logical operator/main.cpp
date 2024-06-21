@@ -5,9 +5,9 @@ using namespace std;
 int main(void) {
     bool isCitigen = true;
     bool hasDegree = false;
-    bool hasWorkExperience = true;
+    short yearsOfWorkExperience = 3;
 
-    bool isEligible = isCitigen && (hasDegree || hasWorkExperience);
+    bool isEligible = isCitigen && (hasDegree || (yearsOfWorkExperience >= 2));
 
     cout << boolalpha << isEligible;
 
