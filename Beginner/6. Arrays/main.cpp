@@ -15,4 +15,6 @@ int main(void){
     getline(cin, names[2]);
 
     cout << endl << names[0];
+
+    return 0;
 }

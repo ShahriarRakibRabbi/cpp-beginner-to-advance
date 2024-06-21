@@ -19,7 +19,8 @@ int main(void) {
 
     cout << "Enter your zipCode : " ;
     getline(cin, zipCode);
-    
+
     cout << endl << street << endl << city << ", " << state << ", " << zipCode;
 
+    return 0;
 }

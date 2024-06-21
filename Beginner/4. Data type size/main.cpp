@@ -10,4 +10,6 @@ int main(void) {
 
     cout << numeric_limits<int>::max() << endl 
          << numeric_limits<int>::min() << endl;
+
+    return 0;
 }
