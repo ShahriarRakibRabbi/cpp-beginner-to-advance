@@ -13,21 +13,16 @@ int main(void) {
 }
 
 string isValid(string customerNumber) {
-    int alphabetCount = 0;
-    int digitCount;
-    for(int i = 0; i <customerNumber.length(); i++){ 
-        if(isalpha(customerNumber[i]))
-            alphabetCount++;
+    if(customerNumber.length() != 6)
+        return "INVALID";
 
-        if(alphabetCount > 2)
+    for(int i = 0; i <2 ; i++){ 
+        if(!isalpha(customerNumber[i]))
             return "INVALID";
     }
 
-    for(int i = 0; i <customerNumber.length(); i++){ 
-        if(isdigit(customerNumber[i]))
-            digitCount++;
-
-        if(digitCount > 2)  
+    for(int i = 2; i <customerNumber.length(); i++){ 
+        if(!isdigit(customerNumber[i]))
             return "INVALID";
     }
 
