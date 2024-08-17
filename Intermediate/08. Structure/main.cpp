@@ -3,7 +3,7 @@
 using namespace std;
 
 struct CustomerInfo {
-    int id;
+    int id = 0;
     string name;
     string email;
 };
