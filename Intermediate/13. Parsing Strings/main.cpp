@@ -11,11 +11,9 @@ struct Movie {
 Movie parseMovie(string str) {
     stringstream stream;
     stream.str(str);
-
     Movie movie;
     getline(stream, movie.title, ',');
     stream >> movie.releaseYear;
-
     return movie;
 }
 
