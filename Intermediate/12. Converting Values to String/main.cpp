@@ -4,15 +4,14 @@
 
 using namespace std;
 
-string toString(double number) {
+string to_String(double number, int precision) {
    stringstream stream;
-   stream << fixed << setprecision(2) <<number;
+   stream << fixed << setprecision(precision) <<number;
    return stream.str();
 }
 
 int main (void) {
     double number = 12.467;
-    string str = toString( number );
-    cout << str;
+    cout << to_String( number, 2 );
     return 0;
 }
