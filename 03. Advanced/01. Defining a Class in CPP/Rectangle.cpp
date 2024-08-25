@@ -3,6 +3,11 @@
 
 using namespace std;
 
+Rectangle::Rectangle(int width, int height) {
+    cout << "Constructing a Rectangle" << endl;
+    setWidth(width);
+    setHeight(height);
+}
 void Rectangle::draw() {
     cout << "Drawing a rectangle" << endl;
     cout << "Dimention: " << width << ", " << height << endl;
