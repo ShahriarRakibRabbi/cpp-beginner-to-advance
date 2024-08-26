@@ -3,11 +3,24 @@
 
 using namespace std;
 
+Rectangle::Rectangle(const Rectangle& source) {
+    cout << "Copying a Rectangle" << endl;
+    this -> width = source.width;
+    this -> height = source.height;
+    this -> colour = source.colour;
+}
+
 Rectangle::Rectangle(int width, int height) {
     cout << "Constructing a Rectangle" << endl;
     setWidth(width);
     setHeight(height);
 }
+
+Rectangle::Rectangle(int width, int height, const string& colour): Rectangle{width, height} {
+    cout << "Constructing a Rectangle with colour" << endl;
+    this -> colour = colour;
+}
+
 void Rectangle::draw() {
     cout << "Drawing a rectangle" << endl;
     cout << "Dimention: " << width << ", " << height << endl;
