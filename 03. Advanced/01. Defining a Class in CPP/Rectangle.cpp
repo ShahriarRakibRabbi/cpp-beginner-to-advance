@@ -21,6 +21,10 @@ Rectangle::Rectangle(int width, int height, const string& colour): Rectangle{wid
     this -> colour = colour;
 }
 
+Rectangle::~Rectangle() {
+    cout << "Destructing a Rectangle" << endl;
+}
+
 void Rectangle::draw() {
     cout << "Drawing a rectangle" << endl;
     cout << "Dimention: " << width << ", " << height << endl;

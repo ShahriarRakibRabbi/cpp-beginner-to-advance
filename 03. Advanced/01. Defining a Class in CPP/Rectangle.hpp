@@ -10,6 +10,7 @@ public :
     Rectangle(const Rectangle& source);
     Rectangle(int width, int height);
     Rectangle(int width, int height, const string& colour);
+    ~Rectangle() = default;
     void draw();
     int getArea();
     int getWidth();
