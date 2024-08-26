@@ -4,8 +4,7 @@
 using namespace std;
 
 int main(void) {
-    TextBox textBox;
-    textBox.setValue("Hello, World!");
+    TextBox textBox{"Hello World!"};
     cout << "Value: " << textBox.getValue() << endl;
     return 0;
 }

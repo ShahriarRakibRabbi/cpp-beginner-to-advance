@@ -3,6 +3,10 @@
 
 using namespace std;
 
+TextBox::TextBox(const string& value){
+    setValue(value);
+}
+
 string TextBox::getValue() {
     return value;
 }
