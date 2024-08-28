@@ -12,6 +12,14 @@ bool Point::operator!=(const Point other) const {
     return !((x == other.x) && (y == other.y));
 }
 
+Point Point::operator+(const Point& other) const {
+    return Point(x + other.x, y + other.y);
+}
+
+Point Point::operator+(const int value) const {
+    return Point(x + value, y + value);
+}
+
 int Point::getX() const {
     return x;
 }

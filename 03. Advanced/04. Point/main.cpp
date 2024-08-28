@@ -10,6 +10,8 @@ int main(void) {
     cout << "point1: " << point1 << endl;
     cout << "point2: " << point2 << endl;
     cout << "point3: " << point3 << endl; 
+    cout << "point1 + point2: " << point1 + point2 << endl;
+    cout << "point1 + point3: " << point1 + point3 << endl;
     cout << "point1 == point2: " << (point1 == point2) << endl;
     cout << "point1 != point2: " << (point1 != point2) << endl;
     cout << "point1 == point3: " << (point1 == point3) << endl;
