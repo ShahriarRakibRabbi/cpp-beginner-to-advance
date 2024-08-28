@@ -9,6 +9,7 @@ class Shape {
 public :
     string getBackground() const;
     void setBackground(string background);
+    virtual void draw() const;
 private :
     string background;
 };

@@ -15,6 +15,7 @@ public :
     int getHeight() const;
     void setWidth(int width);
     void setHeight(int height);
+    void draw() const override;
 private :
     int width = 0;
     int height = 0;

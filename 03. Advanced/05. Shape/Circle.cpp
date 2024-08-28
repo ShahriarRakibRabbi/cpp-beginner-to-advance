@@ -14,3 +14,7 @@ int Circle::getRadius() const {
 void Circle::setRadius(int radius) {
     this->radius = radius;
 }
+
+void Circle::draw() const {
+    cout << "Drawing a circle" << endl;
+}

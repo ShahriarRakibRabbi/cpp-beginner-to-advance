@@ -10,3 +10,7 @@ string Shape::getBackground() const {
 void Shape::setBackground(string background) {
     this->background = background;
 }
+
+void Shape::draw() const {
+    cout << "Drawing a shape" << endl;
+}

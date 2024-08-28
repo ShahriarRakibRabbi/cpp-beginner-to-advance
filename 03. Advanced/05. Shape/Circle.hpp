@@ -13,6 +13,7 @@ public :
     
     int getRadius() const;
     void setRadius(int radius);
+    void draw() const override;
 private :
     int radius = 0;
 };

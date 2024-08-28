@@ -25,3 +25,7 @@ void Rectangle::setHeight(int height) {
     this->height = height;
 }
 
+void Rectangle::draw() const {
+    cout << "Drawing a rectangle" << endl;
+}
+
