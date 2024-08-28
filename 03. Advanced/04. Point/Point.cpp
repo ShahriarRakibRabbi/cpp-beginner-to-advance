@@ -20,6 +20,19 @@ Point Point::operator+(const int value) const {
     return Point(x + value, y + value);
 }
 
+Point& Point::operator++() {
+    x++;
+    y++;
+    return *this;
+}
+
+Point Point::operator++(int) {
+    Point temp = *this;
+    x++;
+    y++;
+    return temp;
+}
+
 int Point::getX() const {
     return x;
 }

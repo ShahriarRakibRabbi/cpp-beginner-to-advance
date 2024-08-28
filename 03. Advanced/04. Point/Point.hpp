@@ -14,6 +14,8 @@ public :
     bool operator!=(const Point other) const;
     Point operator+(const Point& other) const;
     Point operator+(const int value) const;
+    Point& operator++();
+    Point operator++(int);
     int getX() const;
     int getY() const;
     void setX(int x);
